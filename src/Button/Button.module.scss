@@ -1,0 +1,184 @@
+ @mixin button {
+     font-family: 'Noto Sans JP', sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+     &.disabled {
+        color:#9E9E9E;
+        background-color: #e0e0e0;
+        pointer-events: none;
+    }
+}
+
+@mixin variant {
+    box-shadow: none;
+    background-color: transparent;
+   
+}
+
+@mixin variant-primary {
+    @include variant;
+    color: #3D5AFE;
+}
+
+@mixin variant-secondary {
+    @include variant;
+    color: #473e3e;
+}
+
+@mixin variant-danger {
+    @include variant;
+    color: #fe3d3d;
+}
+
+@mixin variant-default {
+    @include variant;
+    color: #8b8c91;
+}
+
+@mixin variant-hover-focus {
+    background: rgba(41, 98, 255, 0.1);
+    border-radius: 6px;
+}
+
+.primary {
+background: #2962FF;
+box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
+border-radius: 6px;
+border: 1px solid #2962FF;
+@include button;
+&.disableShadow {
+    box-shadow: none;
+}
+
+&:hover,&:focus,&.focus {
+    background: #0039CB;
+}
+&.variant_text {
+    @include variant-primary;
+    border: none;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+}
+&.variant_outline {
+    @include variant-primary;
+    border: 1px solid #3D5AFE;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+}
+}
+
+.secondary {
+background: #455A64;
+box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
+border-radius: 6px;
+border : 1px solid #455A64;
+@include button;
+&.disableShadow {
+    box-shadow: none;
+}
+&:hover,&:focus,&.focus {
+    background: #1C313A;
+}
+&.variant_text {
+    @include variant-secondary;
+    border: none;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+ }
+ &.variant_outline {
+    @include variant-secondary;
+    border: 1px solid #473e3e;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+}
+}
+
+.danger {
+background: #D32F2F;
+box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
+border-radius: 6px;
+border: 1px solid #D32F2F;
+@include button;
+&.disableShadow {
+    box-shadow: none;
+}
+&:hover,&:focus,&.focus {
+    background: #9A0007;
+}
+&.variant_text {
+    @include variant-danger;
+    border: none;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+ }
+ &.variant_outline {
+    @include variant-danger;
+    border: 1px solid #fe3d3d;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+} 
+}
+
+.default {
+background: #E0E0E0;
+box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+border-radius: 6px;
+border: 1px solid #E0E0E0;
+&.disableShadow {
+    box-shadow: none;
+}
+&.button_foreground {
+    color:black;
+    &.disabled {
+        color:#9E9E9E;
+        pointer-events: none;
+    }
+}
+&:hover,&:focus,&.focus {
+    background: #AEAEAE;
+}
+&.variant_text {
+    @include variant-default;
+    border: none;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+ }
+ &.variant_outline {
+    @include variant-default;
+    border: 1px solid  #8b8c91;
+    &:hover,&:focus,&.focus {
+        @include variant-hover-focus;
+    }
+} 
+}
+
+.button_foreground {
+font-family: Noto Sans JP;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.sm {
+    padding: 0.25rem 0.5rem;
+}
+
+.md {
+    padding: 0.5rem 1rem
+}
+
+.lg {
+    padding: 1rem 2rem;
+}
+
