@@ -37,7 +37,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/17087030/102712268-c8e00280-42e5-11eb-81db-96b9e5784b9d.PNG)
+![screenshot](https://user-images.githubusercontent.com/17087030/106390428-7595bf80-640e-11eb-9591-6ccf3692c345.PNG)
 
 
 ### Built With
@@ -46,7 +46,7 @@
 
 ## Features
 
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/solutions/JvAW4qghw43O8U8p2FuW) was to build an application to complete the given user stories.
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
 
 ## How To Use
 
